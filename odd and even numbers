@@ -1,0 +1,17 @@
+n = int(input())
+list1 = list()
+for i in range(n):
+    s = int(input())
+    list1.append(s)
+def separator(ls):
+    evenList = []
+    oddlist = []
+    for i in range(len(ls)):
+        if ls[i] % 2 == 0:
+            evenList.append(ls[i])
+        else:
+            oddlist.append(ls[i])
+    tuple1 = (evenList ,oddlist)
+    return tuple1
+s = separator(list1)
+print(s)
